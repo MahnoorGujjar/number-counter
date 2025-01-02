@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+
+}
+body{
+    background-color: #101820;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 100vh;
+}
+.main{
+    width: 460px;
+    height: 380px;
+    text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #FEE715;
+   
+}
+h1{
+    color: #333;
+    font-weight: 800;
+    font-size: 36px;
+}
+.box {
+    text-align: center;
+}
+.value {
+    font-size: 40px; 
+    font-weight: bold;
+    margin-bottom: 30px; 
+    color: #0b0701; 
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px 0;
+}
+.btn:hover {
+    background-color: #555;
+}
+
+
+/* Media Queries for Small Mobile Screens (320px) */
+@media screen and (max-width: 320px) {
+    .main {
+        width: 100%; /* Full width of the screen */
+        height: auto; /* Adjust height automatically */
+        padding: 10px; /* Less padding */
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller font for small screens */
+    }
+
+    .value {
+        font-size: 30px; /* Adjust counter font size */
+        margin-bottom: 20px; /* Adjust space between counter and buttons */
+    }
+
+    .button {
+        width: 100%; /* Ensure buttons take full width */
+        gap: 8px; /* Slightly smaller gap between buttons */
+    }
+
+    .btn {
+        width: 100%; /* Make buttons full width */
+        font-size: 14px; /* Slightly smaller font size for buttons */
+        padding: 12px 0; /* Adjust button padding */
+    }
+}
